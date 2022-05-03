@@ -1,0 +1,70 @@
+#main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    background-color: #0c1f3b;
+    padding: 40px 40px 40px 40px;
+}
+
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:#fff;
+    width: 920px;
+    height: 560px;
+}
+
+#bar-chart { 
+    display: flex; 
+    flex-direction: row; /* Arrange the Bars Horizontally using FlexBox  */
+    align-items: center; /* Have the bars start at the bottom and go up */
+    justify-content: center; /* Center the bars in the middle of the screen */
+    padding: 20px 20px 20px 20px;
+    
+}
+
+#title{
+    text-align: center;
+    font-size: 2em;
+}
+
+#x-axis path{
+    stroke: black;
+    stroke-width: 1px;
+    fill: none;
+}
+
+#y-axis path{
+    stroke: black;
+    stroke-width: 1px;
+    fill: none;
+}
+
+.bar {
+    fill: #164978;
+}
+
+.bar:hover{
+    fill: #9bc6ec;
+}
+
+#tooltip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    padding: 2px;
+    font: 12px;
+    background: #a2dbe6;
+    box-shadow: 1px 1px 10px;
+    border-radius: 2px;
+    pointer-events: none;
+}
